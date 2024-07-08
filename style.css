@@ -10,6 +10,10 @@ body {
     width: 100vw;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*nav section*/
 
 .name {
@@ -27,7 +31,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding-top: 4rem;
+    padding-top: 2rem;
     text-transform: uppercase;
     color: #112A46;
 }
@@ -40,8 +44,8 @@ nav a {
 .navTwo {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /*header section*/
@@ -85,7 +89,7 @@ header h3 {
 .avatar {
     vertical-align: middle;
     width: 180px;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-top: 4rem;
     opacity: 100%;
 }
@@ -97,7 +101,7 @@ header h3 {
     align-items: center;
     border-radius: 10px;
     background-color: #ffffff;
-    margin: 4rem 2rem;
+    margin: 2rem 2rem;
 }
 
 .aboutMe h3 {
@@ -125,10 +129,12 @@ header h3 {
     border-radius: 10px;
     background-color: #ffffff;
     margin: 2rem 2rem;
+    width: 20rem;
+    height: 25rem;
 }
 
 .projects h3 {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: underline;
     padding: 0 2rem;
     display: flex;
@@ -136,16 +142,16 @@ header h3 {
 }
 
 .projects p {
+    padding: 0 2rem;
     font-size: 16px;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .languages {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /*footer*/
@@ -158,4 +164,106 @@ footer {
 footer p {
     font-size: 16px;
     text-align: center;
+}
+
+/*extra decorations*/
+nav a:hover {
+    transform: scale(1.1);
+    color: #0a1e32;
+    transition: 0.3s;
+}
+
+header a:hover {
+    transform: scale(1.1);
+    color: #0a1e32;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+    color: #0a1e32;
+    transition: 0.3s;
+}
+
+.projectLayout a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+.projectLayout a {
+    text-decoration: none;
+    color: #112A46;
+}
+
+
+
+@media screen and (min-width: 640px){
+    /*nav section*/
+    .name {
+        display: inline;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 20px;
+        padding: 0 3rem;
+    }
+
+    nav a {
+        padding: 1.5rem 0;
+    }
+
+    .navOne {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navTwo {
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .navLinks {
+        display: flex;
+        gap: 2rem;
+        font-size: 14px;
+    }
+
+/*About me section */
+
+    .avatar {
+        width: 220px;
+
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+    }
+
+    .aboutMe h3 {
+        text-align: left;
+    }
+
+    .projectLayout {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+        margin: 2rem 0;
+        height: 30rem;
+        width: 30rem;
+    }
+
 }
