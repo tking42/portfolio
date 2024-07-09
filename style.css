@@ -12,6 +12,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    transition: 0.3s;
 }
 
 /*nav section*/
@@ -66,17 +67,15 @@ header {
     justify-content: space-around;
     gap: 4rem;
     font-size: 30px;
-    color: black;
 }
 
 .icons a {
-    color: black;
+    color: #112A46;
 }
 
 header h1 {
     font-size: 40px;
     font-weight: 500;
-
 }
 
 header h3 {
@@ -87,11 +86,9 @@ header h3 {
 /*about me section*/
 
 .avatar {
-    vertical-align: middle;
     width: 180px;
     border-radius: 30%;
     margin-top: 4rem;
-    opacity: 100%;
 }
 
 .aboutMe {
@@ -117,10 +114,16 @@ header h3 {
 
 /*projects section*/
 
-#title {
+.title {
     font-size: 40px;
     text-align: center;
     margin-top: 2rem;
+}
+
+.projectLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .projects {
     display: flex;
@@ -128,24 +131,19 @@ header h3 {
     flex-direction: column;
     border-radius: 10px;
     background-color: #ffffff;
-    margin: 2rem 2rem;
+    margin: 2rem 0;
     width: 20rem;
-    height: 25rem;
 }
 
 .projects h3 {
     font-size: 20px;
     text-decoration: underline;
     padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .projects p {
-    padding: 0 2rem;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
+    padding: 0 2rem;
 }
 
 .languages {
@@ -164,6 +162,12 @@ footer {
 footer p {
     font-size: 16px;
     text-align: center;
+}
+
+.copyright {
+
+    font-weight: 100;
+    font-size: 12px;
 }
 
 /*extra decorations*/
@@ -186,12 +190,10 @@ footer a:hover {
 }
 
 .projectLayout a:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
 }
-
-
 
 .projectLayout a {
     text-decoration: none;
@@ -255,9 +257,9 @@ footer a:hover {
 
     .projectLayout {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        margin: 2rem 2rem;
     }
 
     .projects {
