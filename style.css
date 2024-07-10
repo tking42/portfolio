@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-family: font-family: "Roboto Mono", monospace;
+
 }
 
 body {
@@ -186,6 +187,10 @@ a:hover {
     transform: scale(1.1);
     color: #0a1e32;
     transition: 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .projectLayout a {
