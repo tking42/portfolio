@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    /*This would be better in the body rule,*/
+    /*only use * for very special cases*/
+    /*also: you've put font-family: twice*/
     font-family: font-family: "Roboto Mono", monospace;
 
 }
@@ -11,6 +14,8 @@ body {
     width: 100vw;
 }
 
+/*put the html rule above body, as*/
+/*it's more general*/
 html {
     scroll-behavior: smooth;
     transition: 0.8s;
@@ -96,6 +101,8 @@ header h3 {
 
 /*about me section*/
 
+/*You've got lots of empty lines here,*/
+/*better to remove them to tidy up a little*/
 
 
 .avatar {
@@ -140,6 +147,7 @@ header h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+/* Always put an empty line between css rules*/
 .projects {
     display: flex;
     justify-content: center;
@@ -188,7 +196,7 @@ a:hover {
     color: #0a1e32;
     transition: 0.5s;
 }
-
+/*Again, tidy these empty lines up*/
 
 
 .projectLayout a {
@@ -205,6 +213,8 @@ a:hover {
         margin-top: 0.5rem;
     }
     nav {
+        /*display is already flex, so you shouldn't*/
+        /*need to set this again*/
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -255,6 +265,9 @@ a:hover {
         width: 14rem;
     }
 
+    /*Again, and in the other cases too,*/
+    /*you don't need to set display: flex as it's*/
+    /*been set in the mobile version above already*/
     .aboutMe {
         display: flex;
         flex-direction: row-reverse;
@@ -286,6 +299,8 @@ a:hover {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        /*You don't need to use rem or any unit if*/
+        /*something is 0*/
         margin: 2rem 0rem;
     }
 
