@@ -69,7 +69,6 @@ header h3 {
 
 /*about me section*/
 
-
 .avatar {
     width: 10rem;
     border-radius: 30%;
@@ -292,6 +291,7 @@ footer p {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        border: solid 1px black;
     }
 
     .projects img {
