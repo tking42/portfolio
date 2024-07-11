@@ -27,32 +27,7 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1.4rem;
-    font-weight: bold;
-    background-color: white;
-    height: 20vh;
-}
-
-nav a {
-    text-decoration: none;
-    padding-top: 2rem;
-    text-transform: uppercase;
-    color: #112A46;
-}
-
-.navOne {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navTwo {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    display: none;
 }
 
 /*header section*/
@@ -64,7 +39,8 @@ header {
     flex-direction: column;
     width: 100%;
     background-color: #ffffff;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 29px), repeating-linear-gradient(#ACC8E5, #ACC8E5);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 29px),
+    repeating-linear-gradient(#ACC8E5, #ACC8E5);
     height: 80vh;
 }
 
@@ -103,7 +79,7 @@ header h3 {
 .aboutMe {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-radius: 5%;
     margin: 4rem 1rem;
 }
@@ -133,9 +109,6 @@ header h3 {
     margin: 0;
 }
 
-#projectsLink {
-
-}
 
 .projectLayout {
     display: flex;
@@ -185,13 +158,23 @@ footer p {
     font-size: 0.8rem;
 }
 
-a:hover {
+#top a:hover {
     transform: scale(1.1);
     color: #0a1e32;
     transition: 0.5s;
-    opacity: 0.7;
 }
 
+#contactLink a:hover {
+    transform: scale(1.1);
+    color: #0a1e32;
+    transition: 0.5s;
+}
+
+#headerLink a:hover {
+    transform: scale(1.1);
+    color: #0a1e32;
+    transition: 0.5s;
+}
 
 .projectLayout a {
     text-decoration: none;
@@ -207,22 +190,31 @@ a:hover {
     }
 
     nav {
+        display: flex;
         justify-content: space-between;
         flex-direction: row;
         padding: 0 3rem;
         height: 10vh;
         font-size: 1rem;
+        background-color: white;
     }
 
     nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #112A46;
         padding: 1.5rem 0;
     }
 
     .navOne {
+        display: flex;
+        justify-content: space-evenly;
         gap: 2rem;
     }
 
     .navTwo {
+        display: flex;
+        justify-content: center;
         gap: 2rem;
         margin: 0;
     }
@@ -249,51 +241,61 @@ a:hover {
     }
 
     /*About me section */
+    .pattern {
+        background-image: url("https://io-academy.uk/wp-content/themes/ioacademy/img/homepage-top.svg");
+        background-size: cover;
+    }
     .avatar {
-        width: 14rem;
+        width: 10rem;
         padding: 2rem 0 2rem 0;
+        margin-right: 10rem;
+        margin-top: 5rem;
     }
 
-    #aboutMeLink {
-        height: 100vh;
-    }
 
     .aboutMe {
         flex-direction: row-reverse;
         justify-content: space-evenly;
         align-items: center;
-        padding: 5rem 6rem 4rem;
-        margin: 0;
+        padding: 1rem 5rem 0;
+        margin-top: 0;
     }
 
     .aboutMe h3 {
         text-align: left;
         font-size: 5rem;
+        padding: 2rem;
     }
 
-    .arrow {
-        display: block;
-        text-align: center;
-        color: #112A46;
-        font-size: 2rem;
-    }
 
     /*project section*/
     .title {
+        text-align: right;
+        font-size: 5rem;
         padding-top: 4rem;
+        margin-right: 15rem;
     }
+
 
     .projectLayout {
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 2rem 0;
+        margin: 2rem 4rem;
     }
 
     .projects {
-        margin: 2rem 2rem;
-        width: 20rem;
-        height: 24rem;
+        margin: 2rem;
+        width: 30rem;
+        height: 20rem;
         justify-content: flex-start;
+        color: transparent;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .projects img {
+        display: none;
     }
 
     .languages {
@@ -301,10 +303,58 @@ a:hover {
         align-items: center;
     }
 
+    /*projects hover section*/
+
+    #blogProject {
+        background-image: url("blogSS.png");
+    }
+
+    #blogProject:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #collectorApp {
+        background-image: url("vinlys.jpeg");
+    }
+
+    #collectorApp:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #jsGame {
+        background-image: url("jsGame.png");
+    }
+
+    #jsGame:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #reactApp{
+        background-image: url("react.jpeg");
+    }
+
+    #reactApp:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #iOPortal {
+        background-image: url("iO.png");
+    }
+
+    #iOPortal:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
     /*  Footer */
     footer {
         gap: 2rem;
         flex-direction: column;
+        background-color: white;
     }
 
     .backToTop {
