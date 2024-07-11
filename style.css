@@ -1,19 +1,15 @@
-* {
-    box-sizing: border-box;
-    font-family: font-family: "Roboto Mono", monospace;
-
+html {
+    scroll-behavior: smooth;
+    transition: 0.8s;
 }
 
 body {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
     margin: 0;
     background-color: #ACC8E5;
     color: #112A46;
     width: 100vw;
-}
-
-html {
-    scroll-behavior: smooth;
-    transition: 0.8s;
 }
 
 /*nav section*/
@@ -68,7 +64,7 @@ header {
     flex-direction: column;
     width: 100%;
     background-color: #ffffff;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 29px ), repeating-linear-gradient(#ACC8E5, #ACC8E5);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 29px), repeating-linear-gradient(#ACC8E5, #ACC8E5);
     height: 80vh;
 }
 
@@ -95,7 +91,6 @@ header h3 {
 }
 
 /*about me section*/
-
 
 
 .avatar {
@@ -140,6 +135,7 @@ header h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .projects {
     display: flex;
     justify-content: center;
@@ -190,22 +186,20 @@ a:hover {
 }
 
 
-
 .projectLayout a {
     text-decoration: none;
     color: #0a1e32;
 }
 
 
-
-@media screen and (min-width: 640px){
+@media screen and (min-width: 640px) {
     /*nav section*/
     .name {
         display: inline;
         margin-top: 0.5rem;
     }
+
     nav {
-        display: flex;
         justify-content: space-between;
         flex-direction: row;
         padding: 0 3rem;
@@ -218,12 +212,10 @@ a:hover {
     }
 
     .navOne {
-        display: flex;
         gap: 2rem;
     }
 
     .navTwo {
-        display: flex;
         gap: 2rem;
         margin: 0;
     }
@@ -249,14 +241,12 @@ a:hover {
         text-decoration: underline;
     }
 
-/*About me section */
-
+    /*About me section */
     .avatar {
         width: 14rem;
     }
 
     .aboutMe {
-        display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
         align-items: center;
@@ -277,16 +267,14 @@ a:hover {
     }
 
     /*project section*/
-
     .title {
         padding-top: 4rem;
     }
 
     .projectLayout {
-        display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin: 2rem 0rem;
+        margin: 2rem 0;
     }
 
     .projects {
@@ -295,10 +283,8 @@ a:hover {
         width: 30rem;
     }
 
-/*  Footer */
-
+    /*  Footer */
     footer {
-        display: flex;
         gap: 2rem;
         flex-direction: column;
     }
