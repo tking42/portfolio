@@ -100,6 +100,10 @@ header h3 {
     height: 1.5rem;
 }
 
+span {
+    font-weight: bold;
+}
+
 /*projects section*/
 
 .title {
@@ -265,7 +269,6 @@ footer p {
         font-size: 5rem;
         padding: 2rem;
     }
-
 
     /*project section*/
     .title {
