@@ -121,7 +121,6 @@ span {
     margin: 0;
 }
 
-
 .projectLayout {
     display: flex;
     flex-wrap: wrap;
@@ -142,16 +141,22 @@ span {
     font-size: 1.2rem;
     text-decoration: underline;
     padding: 0 2rem;
+    text-align: center;
 }
 
 .projects p {
     padding: 0 2rem;
+    text-align: center;
 }
 
 .languages {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.links {
+    text-align: center;
 }
 
 /*footer*/
@@ -305,13 +310,21 @@ footer p {
     .projects {
         margin: 2rem;
         width: 30rem;
-        height: 20rem;
+        height: 22rem;
         justify-content: flex-start;
         color: transparent;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border: solid 1px black;
+    }
+
+    .projects a {
+        color: transparent;
+    }
+
+    .projects:hover a {
+        color: #112A46;
     }
 
     .projects img {
@@ -325,17 +338,8 @@ footer p {
 
     /*projects hover section*/
 
-    #blogProject {
-        background-image: url("blogSS.png");
-    }
-
-    #blogProject:hover {
-        background-image: none;
-        color: #112A46;
-    }
-
     #collectorApp {
-        background-image: url("collectorApp.png");
+        background-image: url("assets/collectorApp.png");
     }
 
     #collectorApp:hover {
@@ -344,7 +348,7 @@ footer p {
     }
 
     #jsGame {
-        background-image: url("jsGame.png");
+        background-image: url("assets/jsGame.png");
     }
 
     #jsGame:hover {
@@ -353,7 +357,7 @@ footer p {
     }
 
     #reactApp{
-        background-image: url("react.jpeg");
+        background-image: url("assets/reactProject.png");
     }
 
     #reactApp:hover {
@@ -361,11 +365,29 @@ footer p {
         color: #112A46;
     }
 
+    #API{
+        background-image: url("assets/furnitureStore.png");
+    }
+
+    #API:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
     #iOPortal {
-        background-image: url("iO.png");
+        background-image: url("assets/academyPortal.png");
     }
 
     #iOPortal:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #toDo {
+        background-image: url("assets/toDo.png");
+    }
+
+    #toDo:hover {
         background-image: none;
         color: #112A46;
     }
