@@ -393,6 +393,15 @@ footer p {
         color: #112A46;
     }
 
+    #journeyPlanner {
+        background-image: url("assets/journeyPlanner.png");
+    }
+
+    #journeyPlanner:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
     /*  Footer */
     footer {
         gap: 2rem;
