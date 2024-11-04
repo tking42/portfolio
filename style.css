@@ -402,6 +402,15 @@ footer p {
         color: #112A46;
     }
 
+    #weatherApp {
+        background-image: url("assets/weatherApp.png");
+    }
+
+    #weatherApp:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
     /*  Footer */
     footer {
         gap: 2rem;
