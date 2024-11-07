@@ -411,6 +411,16 @@ footer p {
         color: #112A46;
     }
 
+    #countriesByContinent {
+        background-image: url("assets/countriesByContinent.png");
+    }
+
+    #countriesByContinent:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+
     /*  Footer */
     footer {
         gap: 2rem;
