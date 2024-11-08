@@ -1,5 +1,3 @@
 # My portfolio site
 
-## This is the code for my site
-
-Welcome to portfolio project!
+Welcome to portfolio project! A website which displays my other projects, skills, and more!
