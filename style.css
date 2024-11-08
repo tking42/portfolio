@@ -294,6 +294,10 @@ footer p {
         padding: 2rem;
     }
 
+    .aboutMe p {
+        line-height: 1.8;
+    }
+
     /*project section*/
     .title {
         text-align: right;
