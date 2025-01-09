@@ -133,26 +133,26 @@ span {
     flex-direction: column;
     border-radius: 5%;
     background-color: #ffffff;
-    margin: 2rem 0;
+    margin: 1rem 0;
     width: 20rem;
 }
 
 .projects h3 {
     font-size: 1.2rem;
     text-decoration: underline;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
 .projects p {
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
 .languages {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .links {
@@ -411,6 +411,15 @@ footer p {
     }
 
     #weatherApp:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #recipeFinder {
+        background-image: url("assets/recipeFinder.png");
+    }
+
+    #recipeFinder:hover {
         background-image: none;
         color: #112A46;
     }
