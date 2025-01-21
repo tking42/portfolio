@@ -263,6 +263,7 @@ footer p {
         background-image: url("https://io-academy.uk/wp-content/themes/ioacademy/img/homepage-top.svg");
         background-size: cover;
     }
+
     .avatar {
         width: 10rem;
         padding: 2rem 0 2rem 0;
@@ -366,6 +367,15 @@ footer p {
     }
 
     #reactApp:hover {
+        background-image: none;
+        color: #112A46;
+    }
+
+    #hangman{
+        background-image: url("assets/hangman.png");
+    }
+
+    #hangman:hover {
         background-image: none;
         color: #112A46;
     }
